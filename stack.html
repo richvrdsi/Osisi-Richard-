@@ -4,9 +4,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Stack</title>
 </head>
 <body>
-    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">richvrdsi</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="stack.html">Stack</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <style>
+            nav{
+    background: black;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: red;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    float: left;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    color: white;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: transparent;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg1.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+        </style>
+      </nav>
+      <style>
+        body{
+            background-image: url(/img/pexels-aleksandar-pasaric-325185.jpg);
+        }
+      </style>
+      <div class="content">
+        <h1>Your Stack</h1>
+        <p>Fill up your frameworks and your Stack in our Cloud database system</p>
+        <p>Get code framework and libraries from our growing community  </p>
+        <a href="community.html" class="btn">Join Our Army</a>
+
+        <style>
+            .content{
+                position: absolute;
+                top: 35%;
+                left: 8%
+            }
+            .content .title{
+                color: #1f1f25;
+                font-size: 15px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                display: inline-block;
+                margin-bottom: 20px;
+                background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+}
+            .content h1{
+            color: #1f1f25;
+            font-size: 75px;
+            font-weight: 900;
+            line-height: 90px;
+            text-transform: inherit;
+            width: 70%;
+}
+            .content h1 span{
+             color: #fd4766;
+}
+            .content p{
+             width: 55%;
+             color: #757575;
+             margin-top: 25px;
+             margin-bottom: 30px;
+}
+             .btn{
+                color: black;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding: 16px 40px;
+                border-radius: 500px;
+                display: inline-block;
+                font-weight: 500;
+                transition: all .4s ease-in-out;
+                background-size: 152% 100%;
+                background: black;
+                border: 2px solid black;
+             }
+             .btn{
+                background: black;
+                border-color: black;
+                color: #fd4766;
+             }
+             .btn:hover{
+                background: transparent;
+                border-color: #fd4766;
+                color: #fd4766;
+             }
+
+             *{
+                margin: 0;
+                padding: 0;
+             }
+             .wrapper {
+                width: 100%;
+             }
+
+        </style>
+
+      </div> 
+</body>
 </body>
 </html>
