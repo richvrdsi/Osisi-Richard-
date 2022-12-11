@@ -1,167 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">richvrdsi</label>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="stack.html">Stack</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
-        </ul>
-        <style>
-            nav{
-    background: transparent;
-    height: 80px;
-    width: 100%;
-  }
-  label.logo{
-    color: red;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-    float: left;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: transparent;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">richvrdsi</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="portfolio.html">Portfolio</a></li>
+      <li><a href="stack.html">Stack</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <style>
+        nav{
+background: black;
+height: 80px;
+width: 100%;
 }
-a{
-    text-decoration: none;
+label.logo{
+color: red;
+font-size: 35px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+float: left;
 }
-.hero{
-    width: 100%;
-    height: 100vh;
-    background: url(img/bg1.jpg);
-    background-size: cover;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 100px;
-}
-.logo{
-    max-height: 60px;
+nav ul{
+float: right;
+margin-right: 20px;
 }
 nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
 }
 nav ul li a{
-    color: #1d1d24;
-    position: relative;
-    padding: 5px 0;
+color: white;
+font-size: 17px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+a.active,a:hover{
+background: transparent;
+transition: .5s;
+}
+.checkbtn{
+font-size: 30px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+@media (max-width: 952px){
+label.logo{
+  font-size: 30px;
+  padding-left: 50px;
+}
+nav ul li a{
+  font-size: 16px;
+}
+}
+@media (max-width: 858px){
+.checkbtn{
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2c3e50;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+nav ul li a{
+  font-size: 20px;
+}
+a:hover,a.active{
+  background: none;
+  color: #0082e6;
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
+section{
+background: url(bg1.jpg) no-repeat;
+background-size: cover;
+height: calc(100vh - 80px);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+a{
+text-decoration: none;
+}
+.hero{
+width: 100%;
+height: 100vh;
+background: url(img/bg1.jpg);
+background-size: cover;
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px 100px;
+}
+.logo{
+max-height: 60px;
+}
+nav ul li{
+list-style: none;
+display: inline-block;
+padding: 10px 20px;
+}
+nav ul li a{
+color: #1d1d24;
+position: relative;
+padding: 5px 0;
 }
 nav ul li a:hover{
-    color: #fd4766;
+color: #fd4766;
 }
 nav ul li a:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: #fd4766;
-    transition: .3s;
-    bottom: 0;
+content: "";
+position: absolute;
+left: 0;
+width: 0;
+height: 3px;
+background: #fd4766;
+transition: .3s;
+bottom: 0;
 }
 nav ul li a:hover:after{
-    width: 100%;
+width: 100%;
 }
+    </style>
+  </nav>
+  <style>
+    body{
+      background-image: url(/img/pexels-aleksandar-pasaric-325185.jpg);
+    }
+  </style>
+  <script>
+    var x = document.getElementById("demo");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+  <div id='browser'>
+    <div id='browser-bar'>
+      <div class='circles'></div>
+      <div class='circles'></div>
+      <div class='circles'></div>
+      <p>Contact Us</p>
+      <span class='arrow entypo-resize-full'></span>
+    </div>
+    <div id='content'>
+      <div id='left'>
+        <div id='map'>
+          <p>Where To Find Us</p>
+          <div class='map-locator'>
+            <div class='tooltip'>
+              <ul>
+                <li>
+                  <span class='entypo-location'></span>
+                  <span class='selectedLocation'>Nigeria</span>
+                </li>
+                <li>
+                  <span class='entypo-mail'></span>
+                  <a href='#'>Contraban2000@gmail.com</a>
+                </li>
+                <li>
+                  <span class='entypo-phone'></span>
+                  +234 811 80 69533
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class='zoom'></div>
+        </div>
+        <ul id='location-bar'>
+          <li>
+            <a class='location' data-location='Israel' href='https://f.cl.ly/items/452R3S1440221Z3m372j/israel.png'>Israel</a>
+          </li>
+          <li>
+            <a class='location' data-location='USA' href='https://f.cl.ly/items/0n0o01382l0p1u271D43/usa.png'>USA</a>
+          </li>
+          <li>
+            <a class='location' data-location='The Netherlands' href='https://f.cl.ly/items/0g0l283X3h1T3H270V0A/netherlands.png'>The Netherlands</a>
+          </li>
+          <li>
+            <a class='location' data-location='Singapore' href='https://f.cl.ly/items/1i2Y262H020X141R3h0k/singapore.png'>Singapore</a>
+          </li>
+          <li>
+            <a class="location" data-location="Nigeria" href="https://my-location.org/?lat=6.541834&lng=3.32521" target="_blank">Nigeria</a>
+          </li>
+        </ul>
+      </div>
+      <div id='right'>
+        <p>Connect</p>
+        <div id='social'>
+          <a class='social'>
+            <span class='entypo-facebook'></span>
+          </a>
+          <a class='social'>
+            <span class='entypo-twitter'></span>
+          </a>
+          <a class='social'>
+            <span class='entypo-linkedin'></span>
+          </a>
+          <a class='social'>
+            <span class='entypo-gplus'></span>
+          </a>
+          <a class='social'>
+            <span class='entypo-instagrem'></span>
+          </a>
+        </div>
+        <form>
+          <p>Get in Contact</p>
+          <input placeholder='Email' type='email'>
+          <input placeholder='Subject' type='text'>
+          <textarea placeholder='Message' rows='4'></textarea>
+          <input placeholder='Send' type='submit'>
+        </form>
+        <p>other way</p>
+        <p class='other entypo-mail'>
+          <a href='#'>Contraban2000@gmail.com</a>
+        </p>
+        <p class='other entypo-phone'>+234 811 80 69533</p>
+        <style>
+          @import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600);
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  padding-right: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  background: #829292;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#browser {
+  margin: 10px auto;
+  color: white;
+  width: 80%;
+  -webkit-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#browser-bar {
+  background: #394141;
+  width: 100%;
+  padding: 8px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 0.9em;
+  position: relative;
+}
+#browser-bar p {
+  text-align: center;
+}
+#browser-bar .circles {
+  border-radius: 10px;
+  height: 13px;
+  width: 13px;
+  background: #ff3434;
+  float: left;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+#browser-bar .circles:nth-of-type(2) {
+  background: #ffdd33;
+}
+#browser-bar .circles:nth-of-type(3) {
+  background: #67b678;
+}
+
+.arrow {
+  position: absolute;
+  right: 3px;
+  top: 6px;
+  font-size: 1.2em;
+  color: #8e9699;
+}
+
+#content {
+  background: #454f4f;
+}
+#content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#content #left, #content #right {
+  height: 100%;
+}
+#content #left {
+  float: left;
+  width: 75%;
+  background: #7BC087;
+}
+@media all and (max-width: 780px) {
+  #content #left {
+    width: 100%;
+  }
+}
+#content #left #map {
+  height: 388px;
+  position: relative;
+  background-image: url("http://f.cl.ly/items/452R3S1440221Z3m372j/israel.png");
+  background-size: cover;
+}
+#content #left #map p {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+#content #left #map .zoom {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 2px;
+  height: 70px;
+  background: white;
+}
+#content #left #map .zoom:before, #content #left #map .zoom:after {
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  color: #7BC087;
+  background: white;
+  width: 20px;
+}
+#content #left #map .zoom:before {
+  content: '+';
+  top: -10px;
+  right: -8px;
+}
+#content #left #map .zoom:after {
+  content: '-';
+  bottom: -10px;
+  right: -8px;
+}
+#content #left #map .map-locator {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border: solid 2px white;
+}
+#content #left #map .map-locator:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 5px;
+}
+#content #left #map .map-locator .tooltip {
+  position: absolute;
+  color: #394141;
+  left: 50px;
+  top: -10px;
+  background: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#content #left #map .map-locator .tooltip:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 14px;
+  border-right: solid white 10px;
+  border-top: solid transparent 8px;
+  border-bottom: solid transparent 8px;
+}
+#content #left #map .map-locator .tooltip [class*="entypo-"] {
+  min-width: 25px;
+  display: inline-block;
+  text-align: center;
+  border-right: solid thin #CCC;
+  margin-right: 5px;
+}
+#content #left #map .map-locator .tooltip li {
+  border-bottom: solid thin #CCC;
+  padding: 10px;
+  white-space: nowrap;
+}
+#content #left #map .map-locator .tooltip li a {
+  color: #51B2D6;
+}
+#content #left #map .map-locator .tooltip li:hover [class*="entypo-"] {
+  color: #51B2D6;
+}
+#content #left ul#location-bar {
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+#content #left ul#location-bar li {
+  display: table-cell;
+  padding: 15px;
+  background: #5FA269;
+  border-right: solid thin #7fb587;
+}
+#content #left ul#location-bar li:last-of-type {
+  border-right: 0;
+}
+#content #left ul#location-bar li:hover {
+  background: #4c8254;
+}
+#content #left ul#location-bar .active {
+  background: #4c8254;
+}
+#content #right {
+  float: left;
+  width: 25%;
+  background: #454f4f;
+  font-size: 0.75em;
+  padding: 15px;
+}
+@media all and (max-width: 780px) {
+  #content #right {
+    width: 100%;
+  }
+}
+#content #right p {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#content #right a:hover {
+  color: #51B2D6;
+}
+#content #right #social {
+  display: table;
+  width: 100%;
+}
+#content #right .social {
+  display: table-cell;
+  text-align: center;
+}
+#content #right form {
+  border-top: solid thin #8e9699;
+  border-bottom: solid thin #8e9699;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+#content #right form input,
+#content #right form textarea {
+  background: #394141;
+  padding: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+  color: white;
+}
+#content #right form input:last-of-type,
+#content #right form textarea:last-of-type {
+  margin-bottom: 0;
+}
+#content #right form input[type='submit'],
+#content #right form textarea[type='submit'] {
+  text-transform: uppercase;
+  background: #7BC087;
+  width: 50%;
+  color: white;
+  margin-top: 5px;
+}
+#content #right form input[type='submit']:hover,
+#content #right form textarea[type='submit']:hover {
+  background: #58b068;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+#content #right form input[type='textarea'],
+#content #right form textarea[type='textarea'] {
+  min-height: 75px;
+  vertical-align: text-top;
+}
+#content #right p.other {
+  font-size: 0.7;
+  margin-bottom: 5px;
+  text-transform: lowercase;
+  font-weight: 100;
+}
+#content #right p.other,
+#content #right p.other a {
+  color: #8e9699;
+}
+
         </style>
-      </nav>
-        <h1>Contact Me</h1>
+        <script>
+$("#location-bar a").click(function(event){
+  event.preventDefault();
+  
+  var $this = $(this),
+      $li = $this.parent(),
+      selectedMap = $this.attr("href"),
+      selectedLocation = $this.data('location');
+ 
+  $li.addClass('active').siblings('li').removeClass('active');
+
+  //Update #map bkimage with the image from the location
+  $('#map').css('background-image', 'url(' + selectedMap + ')');  
+  //update tooltip 'address'
+  $('.selectedLocation').text(selectedLocation);
+});
+</script>
+        </style>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
